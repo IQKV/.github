@@ -1,11 +1,8 @@
-# 🛠️ App Scaffolding Toolset
-Open-source Java library designed for enterprise applications.
-
-The project aims to provide a fast and structured way to kickstart the development journey, allowing you to set up new projects easily and efficiently by reducing redundant coding time.
+# 🛠️ App Scaffolding Templates
 
 This is a collection of small and useful Java app templates that are not big enough to create their own projects.
 
-Build an internal tools, admin panels, dashboards & B2B apps with unmatched flexibility.
+Build internal tools, admin panels, dashboards & B2B apps with unmatched flexibility.
 
 #### Code conventions
 
