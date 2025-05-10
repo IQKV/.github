@@ -1,10 +1,9 @@
-# 🛠️ App Scaffolding Toolset
-Robust Modules and Advance Web Components
+# 🛠️ App Scaffolding Templates
 
-The project aims to provide a fast and structured way to kickstart the development journey, allowing you to set up new projects easily and efficiently by reducing redundant coding time.
+This is a collection of small and useful Java app templates that are not big enough to create their own projects.<br>
+Projects using the Dev Expertness platform.
 
-This is a collection of small and useful templates of Java apps, that are not big enough to make own projects.
-
+Another approach is master programming by recreating popular web services utilizing the platform code - leveraging technology, business models, and industry best practices will accelerate growth. 
 #### Code conventions
 
 The code follows [Google Code Conventions](https://google.github.io/styleguide/javaguide.html) without exceptions. Code
