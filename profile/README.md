@@ -2,8 +2,7 @@
 
 This is a collection of small and useful Java app templates that are not big enough to create their own projects.
 
-
-Another approach is master programming by recreating popular web services utilizing the platform code - leveraging technology, business models, and industry best practices will accelerate growth. 
+Another approach is master programming by recreating popular web services utilizing the platform code - leveraging technology, business models, and industry best practices will accelerate growth.
 
 > #### Code conventions
 >
