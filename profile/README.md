@@ -13,7 +13,7 @@ Build internal tools, admin panels, dashboards & B2B apps with unmatched flexibi
 
 ## 📐 App Scaffolding Templates
 
-This is a collection of small and useful Java app templates that are not big enough to create their own projects.
+This is a curated, organized, and searchable catalog of ready-to-use Spring Boot app examples designed to help you kickstart your project.
 
 Another approach is master programming by recreating popular web services utilizing the platform code, leveraging technology, business models, and industry best practices will accelerate growth.
 
