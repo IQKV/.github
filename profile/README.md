@@ -6,5 +6,5 @@ Another approach is master programming by recreating popular web services utiliz
 
 > #### 🚥 Code conventions
 >
-> The code follows [Google Code Conventions](https://google.github.io/styleguide/javaguide.html).
+> The code adheres to the [Google Code Conventions](https://google.github.io/styleguide/javaguide.html).
 > Code quality is measured by [SonarQube](https://docs.sonarsource.com/), [PMD](https://pmd.github.io/), [CheckStyle](https://checkstyle.sourceforge.io/), [SpotBugs](https://spotbugs.github.io/), [Qulice](https://www.qulice.com/)
