@@ -1,8 +1,9 @@
 ## 📐 App Scaffolding Templates
 
 This is a curated, organized, and searchable catalog of ready-to-use Spring Boot app examples designed to help you kickstart your project.
-
+<!--
 Another approach is master programming by recreating popular web services utilizing the platform code, leveraging technology, business models, and industry best practices will accelerate growth.
+-->
 
 > #### 🚥 Code conventions
 >
