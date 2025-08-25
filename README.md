@@ -3,6 +3,7 @@
 A small workspace that powers the IQKV GitHub profile and provides optional developer tooling (commit hooks, formatting, and release helpers).
 
 Use this repository to:
+
 - **Maintain the organization profile**: content lives under `profile/` and renders on the GitHub org page.
 - **Standardize commits and formatting**: via Husky, Commitlint, Prettier, Stylelint, and lint-staged.
 - **Automate releases**: helpers are wired for conventional changelogs.
@@ -23,6 +24,7 @@ Use this repository to:
 ## Setup
 
 Install dependencies (local dev tooling only):
+
 ```bash
 npm install
 ```
@@ -53,6 +55,7 @@ This repo uses **Conventional Commits** and enforces them with **Commitlint** an
 - Example: `feat(profile): add architecture overview section`
 
 Optionally use Commitizen for guided commits:
+
 ```bash
 npx cz
 ```
