@@ -62,7 +62,8 @@ npx cz
 
 ## Releasing
 
-Changelog generation is configured for conventional commits. If you automate releases, use `release-it` or `semantic-release` according to your workflow. See `package.json` for available plugins.
+Changelog generation is configured for conventional commits. If you automate releases, use `release-it` or `semantic-release` according to your workflow. See `package.json` for available
+plugins.
 
 ## Editing the organization profile
 
