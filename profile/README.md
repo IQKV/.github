@@ -6,7 +6,7 @@ Enterprise-grade platform built with modern Java 21 and React 19. Complete authe
 
 ### Platform Highlights
 
-- **⚡ Ship Products Faster** - Skip months of infrastructure work with production-ready authentication, CRM, and payment systems
+- **⚡ Ship Products Faster** - Skip months of infrastructure work with production-ready authentication, CRM, and Stripe integration
 - **💰 Revenue Day One** - Complete payment processing, subscription billing, and merchant onboarding ready for immediate monetization
 - **🔧 Customize Everything Freely** - Open-source MIT license means you own the code and can adapt it to any business model
 - **☸️ Kubernetes Ready** - Docker containers, cloud-agnostic design, easy local development with Docker Compose
