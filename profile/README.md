@@ -1,6 +1,6 @@
 ## IQ Key Value Foundation
 
-**Production-Ready Open-Source SaaS Foundation**
+**[Production-Ready Open-Source SaaS Foundation](https://github.com/IQKV/quickstart-microservices-platform)**
 
 Enterprise-grade platform built with modern Java 21 and React 19. Complete authentication, payments, and multi-tenant architecture with comprehensive testing, security, and observability.
 
@@ -32,7 +32,7 @@ IQKV delivers a complete open-source SaaS platform with pragmatic, reusable micr
 3. **Explore the code**: Inspect authentication, payments, CRM, and multi-tenant architecture
 4. **Deploy to production**: Use provided Kubernetes manifests for cloud deployment
 
-Check the [main platform repository](https://github.com/IQKV) and individual service READMEs for detailed setup instructions.
+Check the [main platform repository](https://github.com/IQKV/quickstart-microservices-platform) and individual service READMEs for detailed setup instructions.
 
 ### Standards
 
