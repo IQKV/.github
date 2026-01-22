@@ -1,25 +1,38 @@
 ## IQ Key Value Foundation
 
-Building high‑quality, production‑ready templates and tooling for modern JVM services.
+**Production-Ready Open-Source SaaS Foundation**
+
+Enterprise-grade platform built with modern Java 21 and React 19. Complete authentication, payments, and multi-tenant architecture with comprehensive testing, security, and observability.
+
+### 🚀 Platform Highlights
+
+- **⚡ Ship Products Faster** - Skip months of infrastructure work with production-ready authentication, CRM, and payment systems
+- **💰 Revenue Day One** - Complete payment processing, subscription billing, and merchant onboarding ready for immediate monetization
+- **🔧 Customize Everything Freely** - Open-source MIT license means you own the code and can adapt it to any business model
+- **☸️ Kubernetes Ready** - Docker containers, cloud-agnostic design, easy local development with Docker Compose
+- **🏗️ Enterprise Architecture** - Tactical Domain Driven Design with clean boundaries, aggregates, and domain events
 
 ### About
 
-IQKV delivers pragmatic, reusable building blocks for backend services. Repositories emphasize clear structure, testability, and maintainability to help you ship faster with confidence.
+IQKV delivers a complete open-source SaaS platform with pragmatic, reusable microservices. Six specialized services working together with modern React frontend, comprehensive testing, and production-ready deployment configurations.
 
 ### What you'll find here
 
-- **App templates**: Opinionated Spring Boot scaffolds for REST, data, messaging, and cloud-native services
-- **Starter packs**: Preconfigured integrations (security, observability, persistence, CI)
-- **Tooling**: Developer experience scripts, quality gates, and automation
-- **Guidelines**: Architecture, static analysis, and code quality practices
+- **Complete SaaS Platform**: Six microservices (User, Gateway, Billing, Contact, Lead, Pipeline) with React frontend applications
+- **Modern Tech Stack**: Java 21 + Spring Boot 3.5, React 19 + TypeScript 5.9, PostgreSQL, RabbitMQ, Redis
+- **Production Features**: JWT authentication, Stripe payments, multi-tenant architecture, CRM capabilities
+- **Cloud-Native**: Kubernetes manifests, Docker containers, health checks, observability with OpenTelemetry
+- **Developer Experience**: Docker Compose local setup, hot reload, comprehensive testing, CI/CD pipelines
+- **Quality Standards**: Domain-driven design, clean architecture, security best practices, performance optimization
 
 ### Quick start
 
-1. Choose a template repository to scaffold your service.
-2. Run the init script and set module and group identifiers.
-3. Enable CI and quality checks using the provided workflows.
+1. **Clone the platform**: Start with the complete microservices platform or individual services
+2. **Local development**: Run `docker-compose up` to get the full stack running locally in minutes
+3. **Explore the code**: Inspect authentication, payments, CRM, and multi-tenant architecture
+4. **Deploy to production**: Use provided Kubernetes manifests for cloud deployment
 
-Check each repository README for exact commands and options.
+Check the [main platform repository](https://github.com/IQKV) and individual service READMEs for detailed setup instructions.
 
 ### Standards
 
@@ -39,5 +52,6 @@ We welcome issues and pull requests. Please review each repository's contributin
 
 ### Links
 
+- **Platform Website**: [iqkv.com](https://iqkv.com)
 - **Organization**: [github.com/IQKV](https://github.com/IQKV)
-- **License**: See `LICENSE` in each repository
+- **License**: MIT License - see `LICENSE` in each repository
