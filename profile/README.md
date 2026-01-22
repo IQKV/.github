@@ -1,10 +1,10 @@
-## IQ Key Value
+## 🚀 IQ Key Value
 
 **[Production-Ready Open-Source SaaS Foundation](https://github.com/IQKV/quickstart-microservices-platform)**
 
 Enterprise-grade platform built with modern Java 21 and React 19. Complete authentication, payments, and multi-tenant architecture with comprehensive testing, security, and observability.
 
-### 🚀 Platform Highlights
+### Platform Highlights
 
 - **⚡ Ship Products Faster** - Skip months of infrastructure work with production-ready authentication, CRM, and payment systems
 - **💰 Revenue Day One** - Complete payment processing, subscription billing, and merchant onboarding ready for immediate monetization
