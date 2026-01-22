@@ -1,4 +1,4 @@
-## IQ Key Value Foundation
+## IQ Key Value
 
 **[Production-Ready Open-Source SaaS Foundation](https://github.com/IQKV/quickstart-microservices-platform)**
 
