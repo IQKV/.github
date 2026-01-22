@@ -1,4 +1,4 @@
-## IQKV Foundation
+## IQ Key Value Foundation
 
 Building high‑quality, production‑ready templates and tooling for modern JVM services.
 
