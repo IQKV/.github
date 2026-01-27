@@ -14,11 +14,11 @@ Enterprise-grade platform built with modern Java 21 and React 19. Complete authe
 
 ### About
 
-IQKV delivers a complete open-source SaaS platform with pragmatic, reusable microservices. Six specialized services working together with modern React frontend, comprehensive testing, and production-ready deployment configurations.
+IQKV delivers a complete open-source SaaS platform with pragmatic, reusable microservices. Specialized services working together with modern React frontend, comprehensive testing, and production-ready deployment configurations.
 
 ### What you'll find here
 
-- **Complete SaaS Platform**: Six microservices (User, Gateway, Billing, Contact, Lead, Pipeline) with React frontend applications
+- **Complete SaaS Platform**: Backend microservices (User, Gateway, Billing, Contact, Lead, Pipeline) with React frontend applications
 - **Modern Tech Stack**: Java 21 + Spring Boot 3.5, React 19 + TypeScript 5.9, PostgreSQL, RabbitMQ, Redis
 - **Production Features**: JWT authentication, Stripe payments, multi-tenant architecture, CRM capabilities
 - **Cloud-Native**: Kubernetes manifests, Docker containers, health checks, observability with OpenTelemetry
