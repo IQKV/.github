@@ -28,7 +28,7 @@ IQKV delivers a complete open-source SaaS platform with pragmatic, reusable micr
 ### Quick start
 
 1. **Clone the platform**: Start with the complete microservices platform or individual services
-2. **Local development**: Run `docker-compose up` to get the full stack running locally in minutes
+2. **Local development**: Run `docker compose up` to get the full stack running locally in minutes
 3. **Explore the code**: Inspect authentication, payments, CRM, and multi-tenant architecture
 4. **Deploy to production**: Use provided Kubernetes manifests for cloud deployment
 
