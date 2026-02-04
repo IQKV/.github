@@ -1,57 +1,71 @@
-## 🚀 IQ Key Value Platform
+## IQ Key Value Platform
 
-**[Production-Ready Open-Source SaaS Foundation](https://github.com/IQKV/quickstart-microservices-platform)**
+**[Production-Ready Microservices Platform](https://github.com/IQKV/quickstart-microservices-platform)**
 
-Enterprise-grade platform built with modern Java 21 and React 19. Complete authentication, payments, and multi-tenant architecture with comprehensive testing, security, and observability.
+Complete microservices foundation for building SaaS applications. Handles user management, payments, CRM, and multi-tenant operations with Java 21 and React 19.
 
-### Platform Highlights
+### Business Capabilities
 
-- **⚡ Ship Products Faster** - Skip months of infrastructure work with production-ready authentication, CRM, and Stripe integration
-- **💰 Revenue Day One** - Complete payment processing, subscription billing, and merchant onboarding ready for immediate monetization
-- **🔧 Customize Everything Freely** - Open-source MIT license means you own the code and can adapt it to any business model
-- **☸️ Kubernetes Ready** - Docker containers, cloud-agnostic design, easy local development with Docker Compose
-- **🏗️ Enterprise Architecture** - Tactical Domain Driven Design with clean boundaries, aggregates, and domain events
+**User Management & Authentication**
 
-### About
+- User registration, login, and email verification
+- Role-based access control with tenant isolation
+- Password reset and account security
+- Organization management and user preferences
 
-IQKV delivers a complete open-source SaaS platform with pragmatic, reusable microservices. Specialized services working together with modern React frontend, comprehensive testing, and production-ready deployment configurations.
+**Payment Processing & Billing**
 
-### What you'll find here
+- Stripe integration with payment intents and webhooks
+- Merchant onboarding via Stripe Connect
+- Subscription management with plans and invoicing
+- Multi-gateway support (Stripe, PayPal, Square, Braintree)
+- Automated refund processing and payout tracking
 
-- **Complete SaaS Platform**: Backend microservices (User, Gateway, Billing, Contact, Lead, Pipeline) with React frontend applications
-- **Modern Tech Stack**: Java 21 + Spring Boot 3.5, React 19 + TypeScript 5.9, PostgreSQL, RabbitMQ, Redis
-- **Production Features**: JWT authentication, Stripe payments, multi-tenant architecture, CRM capabilities
-- **Cloud-Native**: Kubernetes manifests, Docker containers, health checks, observability with OpenTelemetry
-- **Developer Experience**: Docker Compose local setup, hot reload, comprehensive testing, CI/CD pipelines
-- **Quality Standards**: Domain-driven design, clean architecture, security best practices, performance optimization
+**CRM & Lead Management**
 
-### Quick start
+- Lead capture and pipeline management
+- Contact organization and activity tracking
+- Follow-up scheduling and conversion analytics
+- Dashboard with KPIs and performance metrics
 
-1. **Clone the platform**: Start with the complete microservices platform or individual services
-2. **Local development**: Run `docker compose up` to get the full stack running locally in minutes
-3. **Explore the code**: Inspect authentication, payments, CRM, and multi-tenant architecture
-4. **Deploy to production**: Use provided Kubernetes manifests for cloud deployment
+**Platform Infrastructure**
 
-Check the [main platform repository](https://github.com/IQKV/quickstart-microservices-platform) and individual service READMEs for detailed setup instructions.
+- API gateway with rate limiting and circuit breakers
+- Multi-tenant data isolation (schema-per-tenant)
+- JWT-based authentication across all services
+- Reactive programming for high-throughput scenarios
 
-### Standards
+### Architecture
 
-- **Language and framework**: Java/Kotlin with Spring Boot
-- **Branching**: Trunk‑based with short‑lived feature branches
-- **CI/CD**: Build, test, lint, and security checks required before merge
+**Backend Services**: User Service (authentication), Gateway Service (routing), Billing Service (payments), CRM Services (leads, contacts, pipeline)
 
-> #### 🚥 Code conventions
->
-> The code adheres to the [Google Code Conventions](https://google.github.io/styleguide/javaguide.html).
-> Code quality is measured
-> by [SonarQube](https://docs.sonarsource.com/), [PMD](https://pmd.github.io/), [CheckStyle](https://checkstyle.sourceforge.io/), [SpotBugs](https://spotbugs.github.io/), [Qulice](https://www.qulice.com/)
+**Frontend Applications**: React portal with authentication, billing management, CRM dashboard, and admin panels
 
-### Contributing
+**Infrastructure**: PostgreSQL databases, Redis caching, Docker containers, Kubernetes deployment
 
-We welcome issues and pull requests. Please review each repository's contributing guide and follow the standards above.
+### Technical Implementation
+
+**Backend**: Java 21, Spring Boot 3.5, Spring Cloud Gateway, PostgreSQL, Redis, RabbitMQ
+**Frontend**: React 19, TypeScript, Vite, Mantine UI, TanStack Router/Query
+**Security**: JWT with RSA256, OAuth2 Resource Server, role-based access control
+**Operations**: Docker containers, Kubernetes manifests, OpenTelemetry observability
+**Testing**: JUnit 5, Testcontainers, Playwright, comprehensive test coverage
+
+### Repository Structure
+
+**Platform Services**: Complete microservices with authentication, billing, CRM, and gateway
+**Frontend Applications**: React portals for user management, billing, and CRM operations  
+**Development Tools**: Docker Compose setup, CI/CD pipelines, code quality tools
+**Documentation**: Architecture guides, API documentation, deployment instructions
+
+### Development Standards
+
+**Language**: Java/Kotlin with Spring Boot, TypeScript with React
+**Architecture**: Domain-driven design, clean architecture, microservices patterns
+**Quality**: SonarQube, PMD, CheckStyle, SpotBugs code analysis
+**Testing**: Unit tests, integration tests, end-to-end tests, architecture validation
+**CI/CD**: Automated builds, testing, security checks, and deployment pipelines
 
 ### Links
 
-- **Platform Website**: [iqkv.com](https://iqkv.com)
-- **Organization**: [github.com/IQKV](https://github.com/IQKV)
-- **License**: MIT License - see `LICENSE` in each repository
+**Platform**: [iqkv.com](https://iqkv.com) | **Organization**: [github.com/IQKV](https://github.com/IQKV) | **License**: MIT
