@@ -44,7 +44,7 @@ pnpm prettier:check
 pnpm prettier:write
 
 # Remove local node_modules
-pnpm node_modules:clear
+pnpm node_modules:cleanup
 ```
 
 ## Commit conventions
