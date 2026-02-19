@@ -2,7 +2,7 @@
 
 **[Production-Ready Microservices Platform](https://github.com/IQKV/microservices-platform)** - Complete SaaS foundation with user management, payments, CRM, and multi-tenant operations.
 
-**Tech Stack**: Java 21 + Spring Boot 4.0, React 19 + TypeScript, PostgreSQL, RabbitMQ, Redis  
+**Tech Stack**: Java **21** + Spring Boot **4.0**, React **19** + TypeScript, PostgreSQL, RabbitMQ, Redis  
 **Key Features**: JWT authentication, Stripe payments, CRM pipeline, multi-tenant isolation  
 **Deployment**: Kubernetes + Helm charts, Docker containers, cloud-agnostic architecture  
 **Links**: [iqkv.com](https://iqkv.com) | [github.com/IQKV](https://github.com/IQKV) | Apache License
