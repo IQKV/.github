@@ -38,10 +38,10 @@ Husky is configured via the `prepare` script and will auto-install hooks after `
 pnpm lint
 
 # Check formatting with Prettier
-pnpm prettier:check
+pnpm formatter:check
 
 # Write formatting changes with Prettier
-pnpm prettier:write
+pnpm formatter:write
 
 # Remove local node_modules
 pnpm node_modules:cleanup
