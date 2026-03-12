@@ -5,7 +5,7 @@ A small workspace that powers the IQKV GitHub profile and provides optional deve
 Use this repository to:
 
 - **Maintain the organization profile**: content lives under `profile/` and renders on the GitHub org page.
-- **Standardize commits and formatting**: via Husky, Commitlint, Prettier, Stylelint, and lint-staged.
+- **Standardize commits and formatting**: via Husky, Commitlint, oxfmt, Stylelint, and lint-staged.
 - **Automate releases**: helpers are wired for conventional changelogs.
 
 ## Repository structure
@@ -14,7 +14,7 @@ Use this repository to:
   - `README.md` — main profile content
   - `Static-Analysis-and-Code-Quality-Guidelines.md` — quality rules and references
 - `commitlint.config.js` — conventional commit rules
-- `package.json` — tooling configuration (husky, lint-staged, prettier, etc.)
+- `package.json` — tooling configuration (husky, lint-staged, oxfmt, etc.)
 
 ## Prerequisites
 
