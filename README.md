@@ -37,10 +37,10 @@ Husky is configured via the `prepare` script and will auto-install hooks after `
 # Run Stylelint over CSS files
 pnpm lint
 
-# Check formatting with Prettier
+# Check formatting with oxfmt
 pnpm formatter:check
 
-# Write formatting changes with Prettier
+# Write formatting changes with oxfmt
 pnpm formatter:write
 
 # Remove local node_modules
