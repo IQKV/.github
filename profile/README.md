@@ -1,4 +1,4 @@
-## 🚀 IQ Key Value Platform
+## 🚀 Key Value Platform
 
 **[Microservices Platform](https://github.com/IQKV/microservices-platform)** - SaaS foundation with user management, payments, CRM, and multi-tenant operations.
 
