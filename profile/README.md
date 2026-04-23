@@ -52,7 +52,7 @@
 
 **Technical Stack**:
 
-- **Backend**: Java 21, Spring Boot 4.0, Spring Cloud Gateway, PostgreSQL, Redis, RabbitMQ
+- **Backend**: Java 25, Spring Boot 4.0, Spring Cloud Gateway, PostgreSQL, Redis, RabbitMQ
 - **Frontend**: React 19, TypeScript, Vite, Mantine UI, TanStack Router/Query
 - **Security**: JWT with RSA256, OAuth2 Resource Server, role-based access control
 - **Operations**: Docker containers, Kubernetes manifests, OpenTelemetry observability
