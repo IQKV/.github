@@ -12,7 +12,7 @@
 
 **👥 User Management & Authentication**
 
-- User registration, login, and email verification
+- User signup, login, and email verification
 - Role-based access control with tenant isolation
 - Password reset and account security
 - Organization management and user preferences
