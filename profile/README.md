@@ -1,9 +1,9 @@
 ## 🚀 Key Value Platform
 
-**[Microservices Platform](https://github.com/IQKV/microservices-platform)** - SaaS foundation with user management, payments, CRM, and multi-tenant operations.
+**[Microservices Platform](https://github.com/IQKV/microservices-platform)** - SaaS foundation with user management, payments, and multi-tenant operations.
 
 **Tech Stack**: Java **25** + Spring Boot **4.0**, React **19** + TypeScript, PostgreSQL, RabbitMQ, Redis  
-**Key Features**: JWT authentication, Stripe payments, CRM pipeline, multi-tenant isolation  
+**Key Features**: JWT authentication, Stripe payments, multi-tenant isolation  
 **Deployment**: Kubernetes + Helm charts, Docker containers, cloud-agnostic architecture  
 **Links**: [iqkv.com](https://iqkv.com) | [github.com/IQKV](https://github.com/IQKV) | Apache License
 
@@ -15,7 +15,6 @@
 - User signup, login, and email verification
 - Role-based access control with tenant isolation
 - Password reset and account security
-- Organization management and user preferences
 
 **💳 Payment Processing & Billing**
 
@@ -44,9 +43,9 @@
 <details>
 <summary><strong>🏗️ Architecture & Implementation</strong></summary>
 
-**Backend Services**: User Service (authentication), Gateway Service (routing), Billing Service (payments), CRM Services (leads, contacts, pipeline)
+**Backend Services**: IAM Service (authentication), Gateway Service (routing), Billing Service (payments)
 
-**Frontend Applications**: React portal with authentication, billing management, CRM dashboard, and admin panels
+**Frontend Applications**: React portal with authentication, billing management, and admin panels
 
 **Infrastructure**: PostgreSQL databases, Redis caching, Docker containers, Kubernetes deployment
 
@@ -65,14 +64,14 @@
 
 **Repository Organization**:
 
-- **Platform Services**: Complete microservices with authentication, billing, CRM, and gateway
-- **Frontend Applications**: React portals for user management, billing, and CRM operations
+- **Platform Services**: Complete microservices with authentication, billing, and gateway
+- **Frontend Applications**: React portals for user management, billing
 - **Development Tools**: Docker Compose setup, CI/CD pipelines, code quality tools
 - **Documentation**: Architecture guides, API documentation, deployment instructions
 
 **Development Standards**:
 
-- **Language**: Java/Kotlin with Spring Boot, TypeScript with React
+- **Language**: Java with Spring Boot, TypeScript with React
 - **Architecture**: Domain-driven design, clean architecture, microservices patterns
 - **Quality**: SonarQube, PMD, CheckStyle, SpotBugs code analysis
 - **Testing**: Unit tests, integration tests, end-to-end tests, architecture validation
