@@ -1,80 +1,51 @@
-## 🚀 Key Value Platform
+## 🚀 IQ Key Value Platform
 
-**[Microservices Platform](https://github.com/IQKV/microservices-platform)** - SaaS foundation with user management, payments, and multi-tenant operations.
+> Production-ready **Hybrid Tenancy** SaaS foundation. One codebase for multi-tenant B2B or single-tenant B2C applications.
 
-**Tech Stack**: Java **25** + Spring Boot **4.0**, React **19** + TypeScript, PostgreSQL, RabbitMQ, Redis  
-**Key Features**: JWT authentication, Stripe payments, multi-tenant isolation  
-**Deployment**: Kubernetes + Helm charts, Docker containers, cloud-agnostic architecture  
-**Links**: [iqkv.com](https://iqkv.com) | [github.com/IQKV](https://github.com/IQKV) | Apache License
+[![Project Site](https://img.shields.io/badge/Project-iqkv.dev-blue?style=for-the-badge&logo=appveyor)](https://iqkv.dev)
+[![Live Demo](https://img.shields.io/badge/Demo-iqkv.site-success?style=for-the-badge&logo=playstation)](https://iqkv.site)
+
+**[Microservices Platform](https://github.com/IQKV/microservices-platform)** - Core backend (IAM, Gateway, Billing) + Production React SPAs.
+
+**Tech Stack**: Java **25** + Spring Boot **4.x**, React **19** + Mantine, PostgreSQL, RabbitMQ, Astro  
+**Key Features**: Hybrid Tenancy, JWT RS256, Stripe, Schema-per-tenant, FSD Architecture  
+**Deployment**: Kubernetes + Helm, Docker, Drone CI/CD 10-stage pipeline  
+**Links**: [iqkv.dev](https://iqkv.dev) | [iqkv.site](https://iqkv.site) | [iqkv.com](https://iqkv.com) | Apache 2.0
 
 <details>
-<summary><strong>💼 Business Capabilities</strong></summary>
+<summary><strong>💼 Business & UI Capabilities</strong></summary>
 
-**👥 User Management & Authentication**
+**👥 Identity & Access (IAM)**
+- Hybrid Tenancy: Multi-tenant (B2B) or Single-tenant (B2C) rollout modes
+- Self-service signup, invitation flows, and 2-layer token revocation
+- RBAC with `TENANT_OWNER`, `ADMIN`, `MEMBER`, and `PLATFORM_ADMIN`
 
-- User signup, login, and email verification
-- Role-based access control with tenant isolation
-- Password reset and account security
+**💳 Billing & Payments**
+- Stripe-backed subscriptions with automated customer provisioning
+- Plan catalog management and idempotent webhook processing
+- Entitlement evaluation for feature access control
 
-**💳 Payment Processing & Billing**
-
-- Stripe integration with payment intents and webhooks
-- Merchant onboarding via Stripe Connect
-- Subscription management with plans and invoicing
-- Multi-gateway support (Stripe, PayPal, Square, Braintree)
-- Automated refund processing and payout tracking
-
-**📊 CRM & Lead Management**
-
-- Lead capture and pipeline management
-- Contact organization and activity tracking
-- Follow-up scheduling and conversion analytics
-- Dashboard with KPIs and performance metrics
-
-**⚙️ Platform Infrastructure**
-
-- API gateway with rate limiting and circuit breakers
-- Multi-tenant data isolation (schema-per-tenant)
-- JWT-based authentication across all services
-- Reactive programming for high-throughput scenarios
+**� Included UI Applications**
+- **Tenant App**: React 19 SPA for workspace members (team, account, signup)
+- **Platform Admin**: Operator console for global user/org management and metrics
+- **Landing Kit**: Performance-optimized Astro site for product marketing
 
 </details>
 
 <details>
 <summary><strong>🏗️ Architecture & Implementation</strong></summary>
 
-**Backend Services**: IAM Service (authentication), Gateway Service (routing), Billing Service (payments)
+**Backend Services**: IAM Service (Auth/Tenancy), Gateway Service (Reactive/Security), Billing Service (Payments)
 
-**Frontend Applications**: React portal with authentication, billing management, and admin panels
+**Frontend SPAs**: Feature-Sliced Design (FSD), TanStack Router/Query, Lingui i18n, Vitest/Playwright
 
-**Infrastructure**: PostgreSQL databases, Redis caching, Docker containers, Kubernetes deployment
+**Infrastructure**: PostgreSQL 17 (schema isolation), RabbitMQ (event-driven), Traefik, Helm
 
-**Technical Stack**:
-
-- **Backend**: Java 25, Spring Boot 4.0, Spring Cloud Gateway, PostgreSQL, Redis, RabbitMQ
-- **Frontend**: React 19, TypeScript, Vite, Mantine UI, TanStack Router/Query
-- **Security**: JWT with RSA256, OAuth2 Resource Server, role-based access control
-- **Operations**: Docker containers, Kubernetes manifests, OpenTelemetry observability
-- **Testing**: JUnit 5, Testcontainers, Playwright, comprehensive test coverage
+**Technical Standards**:
+- **Backend**: Domain-driven design, MyBatis schema routing, ShedLock, Micrometer
+- **Security**: Header sanitization, JTI denylist, brute-force lockout, JWKS
+- **Quality**: SonarQube, PMD, SpotBugs, ArchUnit, Testcontainers
+- **Operations**: Multi-stage Docker builds, semantic versioning, automated changelogs
 
 </details>
 
-<details>
-<summary><strong>📁 Repository Structure & Standards</strong></summary>
-
-**Repository Organization**:
-
-- **Platform Services**: Complete microservices with authentication, billing, and gateway
-- **Frontend Applications**: React portals for user management, billing
-- **Development Tools**: Docker Compose setup, CI/CD pipelines, code quality tools
-- **Documentation**: Architecture guides, API documentation, deployment instructions
-
-**Development Standards**:
-
-- **Language**: Java with Spring Boot, TypeScript with React
-- **Architecture**: Domain-driven design, clean architecture, microservices patterns
-- **Quality**: SonarQube, PMD, CheckStyle, SpotBugs code analysis
-- **Testing**: Unit tests, integration tests, end-to-end tests, architecture validation
-- **CI/CD**: Automated builds, testing, security checks, and deployment pipelines
-
-</details>
