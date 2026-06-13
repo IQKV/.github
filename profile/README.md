@@ -5,6 +5,11 @@
 [![Project Site](https://img.shields.io/badge/Project-iqkv.dev-blue?style=for-the-badge&logo=appveyor)](https://iqkv.dev)
 [![Live Demo](https://img.shields.io/badge/Demo-iqkv.site-success?style=for-the-badge&logo=playstation)](https://iqkv.site)
 
+<div align="center">
+  <img src="https://github.com/dimdnk/dimdnk/blob/dev/screenshots/chrome_IS8q0S3OwG.gif?raw=true" width="800" alt="IQKV Platform — Tenant App + Platform Admin">
+  <p><strong>Hybrid Tenancy SaaS Boilerplate</strong></p>
+</div>
+
 **[Microservices Platform](https://github.com/IQKV/microservices-platform)** - Core backend (IAM, Gateway, Billing, Audit) + Production React SPAs.
 
 **Tech Stack**: Java **25** + Spring Boot **4.x**, React **19** + Mantine, PostgreSQL, RabbitMQ, Astro  
