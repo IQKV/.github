@@ -10,7 +10,7 @@
   <p><strong>Hybrid Tenancy SaaS Boilerplate</strong></p>
 </div>
 
-**[Microservices Platform](https://github.com/IQKV/microservices-platform)** - Core backend (IAM, Gateway, Billing, Audit) + Production React SPAs.
+**[Microservices Platform](https://github.com/IQKV/microservices-platform)** - Core backend (IAM, Gateway, Billing, CMS, Audit) + Production React SPAs.
 
 **Tech Stack**: Java **25** + Spring Boot **4.x**, React **19** + Mantine, PostgreSQL, RabbitMQ, Astro  
 **Key Features**: Hybrid Tenancy, JWT RS256, Stripe, Schema-per-tenant, Audit Logs, Notifications, FSD Architecture  
