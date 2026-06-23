@@ -54,6 +54,7 @@
 - **Gateway Service**: Reactive/Security/Audit Context/Metrics
 - **Billing Service**: Payments/Subscriptions/Refunds
 - **Audit Service**: Centralized event-driven audit logs with SPI
+- **CMS Service**: Content management, multi-language support, hierarchical content
 
 **Frontend SPAs**: Feature-Sliced Design (FSD), TanStack Router/Query, Lingui i18n, Vitest/Playwright
 
