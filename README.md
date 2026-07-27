@@ -1,4 +1,4 @@
-## IQKV Foundation Project — GitHub Profile
+## iQKV Foundation Project — GitHub Profile
 
 A small workspace that powers the IQKV GitHub profile and provides optional developer tooling (commit hooks, formatting, and release helpers).
 
