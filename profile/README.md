@@ -1,4 +1,4 @@
-## 🚀 IQ Key Value Platform
+## 🚀 iQ Key Value Platform
 
 > Production-ready **Hybrid Tenancy** SaaS foundation. One codebase for multi-tenant B2B or single-tenant B2C applications.
 
