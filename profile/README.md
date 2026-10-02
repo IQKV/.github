@@ -56,6 +56,7 @@
 <summary><strong>🏗️ Architecture & Implementation</strong></summary>
 
 **Backend Services** (100+ REST endpoints, 20+ domain event types):
+
 - **IAM Service**: Auth / Tenancy / OAuth2-OIDC / Invitations / Announcements / Notifications / Magic Link
 - **Gateway Service**: Spring Cloud Gateway (WebFlux) / RS256 JWT validation / Header sanitization / Plan enforcement / Audit context propagation
 - **Billing Service**: Payments / Subscriptions / Seat management / Refunds / Dual gateway (Stripe + Lemon Squeezy)
@@ -75,6 +76,7 @@
 - **Operations**: Multi-stage Docker builds (JDK build → JRE runtime, non-root), semantic versioning, automated changelogs, HPA (2–10 replicas)
 
 **Platform Numbers**:
+
 - **5** backend services · **3** frontend applications · **2** shared libraries
 - **2** deployment modes (MULTI_TENANT / SINGLE_TENANT) with zero-migration path
 - **2** payment gateways (Stripe + Lemon Squeezy)

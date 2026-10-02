@@ -35,6 +35,7 @@ Format: `type(scope): subject`
 - Scope: `profile`, `brand`, `deps`
 
 Examples:
+
 - `docs(profile): update project list`
 - `feat(brand): add new logo variants`
 - `chore(deps): update oxfmt`
