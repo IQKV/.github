@@ -10,10 +10,10 @@
   <p><strong>Hybrid Tenancy SaaS Boilerplate</strong></p>
 </div>
 
-**[Microservices Platform](https://github.com/IQKV/microservices-platform)** - Core backend (IAM, Gateway, Billing, CMS, Audit) + Production React SPAs.
+**[Microservices Platform](https://github.com/IQKV/microservices-platform)** - Core backend (IAM, Gateway, Billing, CMS, Audit, AI Chat) + Production React SPAs.
 
-**Tech Stack**: Java **25** + Spring Boot **4.1**, React **19** + TypeScript **6** + Mantine **9**, PostgreSQL **17**, RabbitMQ, Astro  
-**Key Features**: Hybrid Tenancy, JWT RS256, OAuth2/OIDC Federation, Stripe + Lemon Squeezy, Schema-per-tenant, Audit Logs, Notifications, FSD Architecture  
+**Tech Stack**: Java **25** + Spring Boot **4.x** + Spring AI **2.0**, React **19** + TypeScript **6** + Mantine **9**, PostgreSQL **17**, RabbitMQ, Ollama, Astro  
+**Key Features**: Hybrid Tenancy, JWT RS256, OAuth2/OIDC Federation, Stripe + Lemon Squeezy, Schema-per-tenant, Audit Logs, Notifications, LLM Chat (Ollama), FSD Architecture  
 **Deployment**: Kubernetes + Helm, Docker, Drone CI/CD 10-stage pipeline  
 **Links**: [iqkv.dev](https://iqkv.dev) | [iqkv.site](https://iqkv.site) | [app.iqkv.site](https://app.iqkv.site) | [admin.iqkv.site](https://admin.iqkv.site) | Apache 2.0
 
@@ -44,10 +44,19 @@
 - **Customer Portal**: Self-service billing management (both Stripe and Lemon Squeezy)
 - Trial period support with `isInTrial` and `trialDaysLeft` on subscription responses
 
+**💬 AI Chat (Spring AI 2.0 + Ollama)**
+
+- LLM-backed conversational API with session and message persistence per user
+- Configurable system prompt, input char limit, output token budget, and temperature — all via env vars without rebuild
+- Default model `llama3.1:8b` on Ollama; swappable to any OpenAI-compatible provider via config
+- JWT RS256 resource server validated via IAM JWKS; gateway route with 180s timeout for LLM inference
+- Admin oversight addon in Platform Admin — read all sessions, view full chat history with markdown rendering
+- Tenant app addon — chat interface with session list, markdown bubbles, animated UI
+
 **📱 Included UI Applications**
 
-- **Tenant App**: React 19 SPA — workspace members (team management, billing self-service, notifications, connected accounts, SSO configuration, i18n: en/bg/de/fr)
-- **Platform Admin**: Operator console — global user/org management, subscriptions, audit logs, announcements, refunds, user identity management (i18n: en/bg/de/fr)
+- **Tenant App**: React 19 SPA — workspace members (team management, billing self-service, notifications, connected accounts, SSO configuration, AI Chat addon, i18n: en/bg/de/fr)
+- **Platform Admin**: Operator console — global user/org management, subscriptions, audit logs, announcements, refunds, AI Chat Sessions addon, user identity management (i18n: en/bg/de/fr)
 - **Landing Kit**: Performance-optimized Astro site with auth-aware navigation, plan selector with per-seat pricing support
 
 </details>
@@ -62,10 +71,11 @@
 - **Billing Service**: Payments / Subscriptions / Seat management / Refunds / Dual gateway (Stripe + Lemon Squeezy)
 - **Audit Service**: Passive event-driven audit logs; SPI pattern; JSONB metadata; severity filtering
 - **CMS Service**: Content management, multi-language support, hierarchical pages, SEO metadata
+- **AI Chat Service**: Spring AI 2.0 + Ollama; chat session/message persistence; prompt engineering controls; PLATFORM_ADMIN oversight API
 
 **Frontend SPAs** (60+ UI routes): Feature-Sliced Design (FSD), TanStack Router/Query, Zustand, Lingui 6 i18n, React Hook Form + Zod, Vitest + Playwright, OxLint / OxFmt
 
-**Infrastructure**: PostgreSQL 17 (schema-per-tenant isolation), RabbitMQ (topic exchange, DLQ), Redis (OAuth2 PKCE state, token denylist), MinIO S3, Prometheus + Grafana + Loki, Helm / Kubernetes
+**Infrastructure**: PostgreSQL 17 (schema-per-tenant isolation), RabbitMQ (topic exchange, DLQ), Redis (OAuth2 PKCE state, token denylist), MinIO S3, Ollama (local LLM inference), Prometheus + Grafana + Loki, Helm / Kubernetes
 
 **Technical Standards**:
 
@@ -77,10 +87,10 @@
 
 **Platform Numbers**:
 
-- **5** backend services · **3** frontend applications · **2** shared libraries
+- **6** backend services · **3** frontend applications · **2** shared libraries
 - **2** deployment modes (MULTI_TENANT / SINGLE_TENANT) with zero-migration path
 - **2** payment gateways (Stripe + Lemon Squeezy)
 - **3** social login providers (Google, GitHub, Microsoft)
-- **4** PostgreSQL databases with schema-per-tenant in IAM and CMS
+- **5** PostgreSQL databases (schema-per-tenant in IAM and CMS; system schema in AI Chat)
 
 </details>
