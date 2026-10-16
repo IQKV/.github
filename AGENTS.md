@@ -26,6 +26,33 @@
 - **Approval phrases**: "Yes", "Proceed", "Apply", "Do it", "Looks good"
 - Keep content factual and accurate. No auto-generated summary files.
 
+## Evaluation
+
+How we judge whether an agent task in this repository is actually done. Evaluation is evidence-based — a claim without the result is not a pass.
+
+> This section starts minimal and grows with the repository. Add a gate only when a change type repeatedly slips through without it.
+
+### Definition of done
+
+A task is evaluated as done only when all of the following hold:
+
+- Every gate required by the change type below is satisfied.
+- The final report names what was changed and what was checked — per AI Agent Guidelines.
+- Nothing required was skipped silently. Something that could not be checked is reported as a gap, never as a pass.
+
+### Required gates by change type
+
+| Change type | Required gates |
+| --- | --- |
+| Any change | No build or test gate — Markdown and assets only |
+| Profile README content | Rendered preview checked before presenting a result |
+| Brand asset added or replaced | File referenced from `profile/README.md`; dimensions and format checked |
+| Wording-only edit | No gate |
+
+### Ordering
+
+Check the narrowest relevant item first, then the rest for the change type. On a problem, stop and report it rather than continuing on an unverified base (see Execution Discipline).
+
 ## Commit Standards
 
 Format: `type(scope): subject`
