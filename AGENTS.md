@@ -42,12 +42,12 @@ A task is evaluated as done only when all of the following hold:
 
 ### Required gates by change type
 
-| Change type | Required gates |
-| --- | --- |
-| Any change | No build or test gate — Markdown and assets only |
-| Profile README content | Rendered preview checked before presenting a result |
+| Change type                   | Required gates                                                          |
+| ----------------------------- | ----------------------------------------------------------------------- |
+| Any change                    | No build or test gate — Markdown and assets only                        |
+| Profile README content        | Rendered preview checked before presenting a result                     |
 | Brand asset added or replaced | File referenced from `profile/README.md`; dimensions and format checked |
-| Wording-only edit | No gate |
+| Wording-only edit             | No gate                                                                 |
 
 ### Ordering
 
